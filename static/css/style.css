@@ -1,0 +1,464 @@
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.preload {
+    margin: auto;
+}
+
+a {
+    text-decoration: none !important;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 20px;
+    margin: auto;
+    margin-left: 60px;
+    margin-right: 20px;
+    float: right;
+    color: white;
+    transition-property: padding;
+    transition-duration: .3s;
+}
+
+.nav-link:hover {
+    background-color: rgb(224, 95, 20);
+    padding-left: 60px;
+}
+
+#nav-whole {
+    width: 100%;
+    background-color: rgb(218, 66, 45);
+    height: 60px;
+}
+
+#nav-whole img {
+    width: 50px;
+    margin: 5px;
+    margin-left: 120px;
+    border-radius: 14px;
+}
+
+
+/* ========= section ====== */
+
+#clg-nav {
+    display: block;
+    background-color: rgb(218, 66, 45);
+    margin: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+#clg-nav img {
+    width: 107px;
+    border: 2px solid white;
+}
+
+#clg-nav .lgtx {
+    color: rgb(218, 66, 45);
+    text-align: center;
+}
+
+#clg-nav p {
+    margin: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.section {
+    flex-wrap: wrap;
+    width: 30%;
+    height: 157px;
+    padding: 20px;
+    border: 2px solid white;
+    color: white;
+}
+
+.clg-logo-text {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+#hr {
+    width: 100%;
+    border: 1px solid rgb(224, 95, 20);
+    margin: auto;
+}
+
+#about {
+    width: 75%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid rgb(223, 219, 219);
+    background-color: #f9ece0;
+    border-radius: 13px;
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    border-radius: 13px;
+    border: none;
+    box-shadow: .5px .5px 10px rgb(139, 138, 138);
+    color: white;
+    background-color: rgb(218 66 45);
+}
+
+button:hover {
+    background-color: #fff;
+    border-radius: 13px;
+    border: none;
+    color: rgb(218 66 45);
+}
+
+#about-prin {
+    width: 75%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid rgb(223, 219, 219);
+    background-color: #f9ece0;
+    border-radius: 13px;
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+}
+
+.stream-icon {
+    width: 75%;
+    border: 2px solid rgb(202, 196, 196);
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 13px;
+    margin-top: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.stream-icon div {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(204, 200, 200);
+    border-radius: 13px;
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 13px;
+    transition-property: width, height;
+    transition-duration: .3s;
+}
+
+.stream-icon img {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: block;
+}
+
+.stream-icon div:hover {
+    width: 130px;
+    height: 130px;
+}
+
+.stream-icon p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(224, 95, 20);
+}
+
+#notice {
+    width: 75%;
+    padding: 30px;
+    border: 2px solid rgb(241, 103, 48);
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 13px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+    color: rgb(0, 0, 0);
+}
+
+#notice h2 {
+    text-align: center;
+    width: 97%;
+    position: relative;
+    top: -50px;
+    border-radius: 13px;
+    background-color: rgb(218 66 45);
+    color: white;
+    padding: 13px;
+}
+
+.button1 {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: sticky;
+    bottom: 2px;
+}
+
+
+/* .school {
+    display: block;
+    background-color: rgb(247, 105, 105);
+    color: black;
+    padding: 10px;
+    width: 75px;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+} */
+
+#last-icon {
+    width: 75%;
+    margin: auto;
+}
+
+#last-icon div {
+    border-radius: 13px;
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+    padding: 7px;
+    margin: 30px;
+    background-color: #fff;
+}
+
+.p1 {
+    display: inline-block;
+    /* margin: 30px; */
+    /* padding: 30px; */
+    /* top: -33px; */
+    text-align: center;
+    padding-left: 40px;
+    font-size: 27px;
+    position: relative;
+    font-weight: bold;
+    color: rgb(43, 3, 3);
+}
+
+#last-icon img {
+    width: 180px;
+    border-radius: 70px;
+    display: inline-block;
+}
+
+.media-mobile {
+    display: none;
+}
+
+.manu-nav {
+    display: none;
+}
+
+#divformedmob hr {
+    display: none;
+}
+
+.mns {
+    font-size: 17px;
+    padding: 0px 80px;
+}
+
+.scrolling {
+    height: 500px;
+    border-radius: 0px;
+}
+
+@media screen and (max-width:800px) {
+    .nav-link {
+        display: none;
+    }
+    #nav-whole img {
+        width: 50px;
+        margin-left: 15px;
+    }
+    .section {
+        width: 100%;
+    }
+    .lft2 {
+        display: block;
+        width: 100%;
+        float: none;
+        padding-right: none;
+        padding-top: none;
+    }
+    #stream-icon div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+    #notice {
+        width: 80%;
+        padding: 20px;
+    }
+    #divformedmob {
+        display: block;
+        transition: all 1s;
+    }
+    .media-mobile {
+        display: inline-block;
+        width: 96%;
+        height: 25px;
+        color: white;
+        text-align: center;
+        background-color: rgb(218, 66, 45);
+        padding: 8px;
+        box-shadow: .5px .5px 10px white;
+        /* position: relative; */
+        /* transition: all .5s ease; */
+    }
+    /* #divformedmob hr {
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(139, 37, 37);
+        width: 70%;
+        margin: auto;
+        padding: 0%;
+    } */
+    .media-mobile:hover {
+        background-color: rgb(241, 103, 48);
+    }
+    .manu-nav {
+        display: block;
+        width: 35px;
+        position: absolute;
+        top: 17px;
+        left: 85%
+    }
+    #last-icon {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+    #last-icon div {
+        margin: auto;
+        margin-top: 20px;
+        width: 90%;
+        padding: 0px;
+    }
+    #last-icon img {
+        display: inline-block;
+        padding-left: 0px;
+        width: 100px;
+        text-align: center;
+        margin: 0px;
+        padding: 10px;
+    }
+    .p1 {
+        display: inline-block;
+        padding-left: 0px;
+        text-align: center;
+        margin: 0px;
+        position: relative;
+        font-size: 22px;
+        top: 7px;
+        left: -23px;
+        padding: 13px;
+        padding-top: 0px;
+        width: 150px;
+    }
+    .mns {
+        font-size: 17px!important;
+        padding: 14px;
+        margin: 0px;
+        padding-top: 0px;
+    }
+    .scrolling {
+        height: 200px;
+        border-radius: 0px;
+    }
+    #deskmob {
+        display: none;
+    }
+    #notice h2 {
+        width: 92%;
+        position: relative;
+        top: -40px;
+    }
+}
+
+
+/* ====================================== */
+
+#deskmob {
+    display: none;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    border-radius: 0px;
+    margin: auto;
+    border: 2px solid rgb(202, 202, 202);
+    box-shadow: 1px 1px 15px rgb(98, 98, 98);
+}
+
+.dot1 {
+    background-color: rgba(187, 187, 187, 0);
+}
+
+.active {
+    background-color: #71717100;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1300px) {
+    #deskmob {
+        display: block;
+        padding: 30px;
+    }
+    #main-body {
+        display: none;
+    }
+}

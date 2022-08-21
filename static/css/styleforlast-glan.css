@@ -1,0 +1,134 @@
+.mySlides1 {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container1 {
+    max-width: 100%;
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    /* border: 2px solid rgb(98, 98, 98); */
+    /* box-shadow: 1px 1px 15px rgb(98, 98, 98); */
+}
+
+.scroll1 {
+    width: 100%;
+    height: 330px;
+}
+
+.scroll1 img {
+    /* height: 400px; */
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:500px) {
+    .scroll1 img {
+        height: 200px;
+        /* border-radius: 13px; */
+    }
+}
+
+.active {
+    background-color: #71717100;
+}
+
+.fade1 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#last-glan {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.last-glan-child {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid rgb(218, 208, 208);
+    box-shadow: 1px 1px 15px rgb(128, 124, 124);
+    border-radius: 13px;
+    height: 523px;
+}
+
+.last-glan-child p {
+    margin: 10px;
+    color: black;
+}
+
+#sub-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#sub-img img {
+    width: 33%;
+    display: inline-block;
+    margin: auto;
+    padding: 0px;
+}
+
+.png-image {
+    overflow-y: scroll;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width:500px) {
+    #last-glan {
+        width: 100%;
+    }
+    .png-image {
+        height: 286px;
+    }
+    .last-glan-child {
+        width: 93%;
+        margin-top: 10px;
+    }
+    .scroll1 {
+        width: 100%;
+        height: 224px;
+    }
+    .last-glan-child {
+        height: 400px;
+    }
+}
