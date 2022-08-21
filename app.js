@@ -1,6 +1,1 @@
-fbfbgb
 
-
-
-
-ok man oidovf
