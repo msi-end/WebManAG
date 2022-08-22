@@ -1,10 +1,5 @@
 body {
     margin: 0px;
-    scroll-behavior: smooth;
-}
-
-.preload {
-    margin: auto;
 }
 
 a {
@@ -42,58 +37,40 @@ a:hover {
 
 #nav-whole img {
     width: 50px;
-    margin: 5px;
     margin-left: 120px;
-    border-radius: 14px;
 }
-
-
-/* ========= section ====== */
 
 #clg-nav {
-    display: block;
-    background-color: rgb(218, 66, 45);
-    margin: auto;
-    margin: 20px;
-    text-align: center;
-}
-
-#clg-nav img {
-    width: 107px;
-    border: 2px solid white;
-}
-
-#clg-nav .lgtx {
-    color: rgb(218, 66, 45);
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #clg-nav p {
     margin: 0px;
     padding-left: 0px;
-    text-align: center;
 }
 
-.section {
-    flex-wrap: wrap;
-    width: 30%;
-    height: 157px;
-    padding: 20px;
-    border: 2px solid white;
-    color: white;
+#clg-nav a {
+    color: rgb(255, 255, 255);
 }
 
-.clg-logo-text {
+#clg-nav .section {
     display: inline-block;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    position: relative;
-    top: 10%;
+    height: 165px;
+    width: 40%;
+    padding: 20px;
+    border-radius: 13px;
+    background-color: rgb(218, 66, 45);
+    margin-top: 50px;
+}
+
+.section p {
+    font-size: 17px;
 }
 
 #hr {
-    width: 100%;
+    width: 70%;
     border: 1px solid rgb(224, 95, 20);
     margin: auto;
 }
@@ -135,49 +112,56 @@ button:hover {
     box-shadow: 1px 1px 15px rgb(128, 124, 124);
 }
 
-.stream-icon {
+#stream-icon {
     width: 75%;
     border: 2px solid rgb(202, 196, 196);
     box-shadow: 1px 1px 15px rgb(128, 124, 124);
     padding: 30px;
     background-color: #fff;
     border-radius: 13px;
-    margin-top: 10px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.stream-icon div {
-    width: 120px;
-    height: 120px;
+#stream-icon div {
+    width: 100px;
+    height: 100px;
     border: 2px solid rgb(204, 200, 200);
     border-radius: 13px;
     box-shadow: 1px 1px 15px rgb(128, 124, 124);
     padding: 20px;
-    margin: 10px;
     border-radius: 13px;
     transition-property: width, height;
     transition-duration: .3s;
 }
 
-.stream-icon img {
-    width: 70px;
-    height: 70px;
+#stream-icon img {
+    width: 60px;
+    height: 60px;
     margin: auto;
     display: block;
 }
 
-.stream-icon div:hover {
+#stream-icon div:hover {
     width: 130px;
     height: 130px;
 }
 
-.stream-icon p {
+#stream-icon p {
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
+    margin: 0px;
+    margin-top: 12px;
+    color: rgb(168, 62, 0);
+}
+
+#stream-icon h4 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 3px;
     color: rgb(224, 95, 20);
 }
 
@@ -188,20 +172,8 @@ button:hover {
     margin: auto;
     margin-top: 40px;
     border-radius: 13px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     box-shadow: 1px 1px 15px rgb(128, 124, 124);
-    color: rgb(0, 0, 0);
-}
-
-#notice h2 {
-    text-align: center;
-    width: 97%;
-    position: relative;
-    top: -50px;
-    border-radius: 13px;
-    background-color: rgb(218 66 45);
-    color: white;
-    padding: 13px;
 }
 
 .button1 {
@@ -213,18 +185,6 @@ button:hover {
     position: sticky;
     bottom: 2px;
 }
-
-
-/* .school {
-    display: block;
-    background-color: rgb(247, 105, 105);
-    color: black;
-    padding: 10px;
-    width: 75px;
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-} */
 
 #last-icon {
     width: 75%;
@@ -288,16 +248,6 @@ button:hover {
         width: 50px;
         margin-left: 15px;
     }
-    .section {
-        width: 100%;
-    }
-    .lft2 {
-        display: block;
-        width: 100%;
-        float: none;
-        padding-right: none;
-        padding-top: none;
-    }
     #stream-icon div {
         width: 100px;
         height: 100px;
@@ -309,7 +259,7 @@ button:hover {
     }
     #divformedmob {
         display: block;
-        transition: all 1s;
+        transition: all .5s ease;
     }
     .media-mobile {
         display: inline-block;
@@ -335,10 +285,10 @@ button:hover {
     }
     .manu-nav {
         display: block;
-        width: 35px;
+        width: 40px;
         position: absolute;
-        top: 17px;
-        left: 85%
+        top: 10px;
+        left: 80%
     }
     #last-icon {
         width: 100%;
@@ -382,22 +332,37 @@ button:hover {
         height: 200px;
         border-radius: 0px;
     }
-    #deskmob {
-        display: none;
+    #clg-nav .section {
+        width: 80%;
+        margin-top: 20px;
     }
-    #notice h2 {
-        width: 92%;
-        position: relative;
-        top: -40px;
-    }
+    
 }
-
+@media screen and (max-width:320px) {
+         .click-clm1 {
+            /*position: relative;*/
+            /*left: 79%;*/
+            /*top: -7px;*/
+            display: inline-block;
+        }
+        .click-clm2 {
+            /*position: relative;*/
+            /*left: 79%;*/
+            /*top: 07px;*/
+            display: inline-block;
+        }
+  #clg-nav .section {
+    display: inline-block;
+    height: 200px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 13px;
+    background-color: rgb(218, 66, 45);
+    margin-top: 50px;
+  }
+}
 
 /* ====================================== */
-
-#deskmob {
-    display: none;
-}
 
 .mySlides {
     display: none;
@@ -450,15 +415,5 @@ img {
     }
     to {
         opacity: 1
-    }
-}
-
-@media screen and (min-width:800px) and (max-width:1300px) {
-    #deskmob {
-        display: block;
-        padding: 30px;
-    }
-    #main-body {
-        display: none;
     }
 }
