@@ -567,59 +567,7 @@
             }
         </script>
     </div>
-
-    <?php
-$server ="localhost";
-$username="root";
-$password="";
-
-$con = mysqli_connect($server, $username, $password);
-
-if(!con){
-    die("fail to connect".mysqli_connect_error());
-}
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$dob = $_POST['dob'];
-$email = $_POST['email'];
-$mnumber = $_POST['mnumber'];
-$gender = $_POST['gender'];
-$medium = $_POST['medium'];
-$caste = $_POST['caste'];
-$religion = $_POST['religion'];
-$resaddress = $_POST['resaddress'];
-$city = $_POST['city'];
-$pin = $_POST['pin'];
-$state = $_POST['state'];
-$country = $_POST['country'];
-$Percentage = $_POST['Percentage'];
-$yopass = $_POST['yopass'];
-$stream = $_POST['stream'];
-$subj1 = $_POST['subj1'];
-$subj2 = $_POST['subj2'];
-$subj3 = $_POST['subj3'];
-$subj4 = $_POST['subj4'];
-$file1 = addslashes(file_get_contents($_FILES["photo1"]["tmp_name"]));
-$file2 = addslashes(file_get_contents($_FILES["photo2"]["tmp_name"]));
-$file3 = addslashes(file_get_contents($_FILES["photo3"]["tmp_name"]));
-$file4 = addslashes(file_get_contents($_FILES["photo4"]["tmp_name"]));
-
-       
-$sql = "INSERT INTO `xbackend7`.`registration` (`fname`, `lname`, `dob`, `email`, `mnumber`, `gender`, `medium`, `caste`, `religion`, `resaddress`, `city`, `pin`, `state`, `country`, `Percentage`, `yopass`, `stream`, `subj1`, `subj2`, `subj3`, `subj4`, `photo1`, `photo2`, `photo3`, `photo4`, `dt`) VALUES ('$fname', '$lname', '$dob', '$email', '$mnumber', '$gender', '$medium', '$caste', '$religion', '$resaddress', '$city', '$pin', '$state', '$country', '$Percentage', '$yopass', '$stream', '$subj1', '$subj2', '$subj3', '$ubj4', '$file1','$file2','$file3','$file4' , current_timestamp());";
-#echo $sql ;
-if($con->query($sql) == false){
-        echo "<script>" ;
-        echo " function doit() ;";
-        echo "</script>";
-}
-else{
-    echo  "fail to insert: $sql <br> $con->error";
-}
-$con->close();
-?>
-
     <script>
-
         function doit() {
             sendemail();
             change();

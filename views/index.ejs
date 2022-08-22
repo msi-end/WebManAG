@@ -7,215 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/css/styleforlast-glan.css">
-
-
-
-    <title></title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        #about-prin img {
-            width: 150px;
-            border-radius: 0px;
-            display: inline-block;
-            margin: 10px;
-        }
-
-        #about-prin h3 {
-            margin: 10px;
-        }
-
-        #about-prin p {
-            display: inline-block;
-        }
-
-        #rector p {
-            display: inline-block;
-            position: relative;
-            float: right;
-            width: 700px;
-            padding: 60px;
-        }
-
-        /* .button1{
-        position:sticky;
-    } */
-
-        @media screen and (max-width:500px) {
-            #about-prin img {
-                width: 100px;
-                border-radius: 0px;
-                display: block;
-                margin: auto;
-            }
-
-            #about-prin h3 {
-                margin: auto;
-                width: 192px;
-            }
-
-            #about-prin p {
-                text-align: justify;
-                display: inline-block;
-            }
-
-            #rector p {
-                display: block;
-                padding: 0px;
-            }
-        }
-
-        #lgcname a {
-            color: rgb(218, 66, 45);
-            height: 60px;
-        }
-
-        #lgcname-div {
-            margin: auto;
-            margin-top: 20px;
-            width: 80%;
-        }
-
-        #lgcname img {
-            box-shadow: 1px 1px 10px rgb(151, 151, 151);
-            text-shadow: .1px .1px 10px #000000;
-            width: 137px;
-            margin: auto;
-            display: block;
-        }
-
-        #lgcname p {
-            text-shadow: .1px .1px 10px #e2e2e2;
-            margin: auto;
-            text-align: center;
-            margin: 5px;
-            font-size: 20px;
-        }
-
-        .click-clm1 {
-            /*position: relative;*/
-            /*left: 80%;*/
-            /*top: 17px;*/
-            display: inline-block;
-            float: right;
-        }
-
-        .click-clm2 {
-            /*position: relative;*/
-            /*left: 80%;*/
-            /*top: 17px;*/
-            display: inline-block;
-            float: right;
-        }
-
-        #lgcname strong {
-            margin-top: 5px;
-        }
-
-        .lft {
-            display: inline-block;
-        }
-
-        .lft2 {
-            display: inline-block;
-            width: 69%;
-            float: right;
-            padding-right: 30px;
-            padding-top: 27px;
-        }
-
-        @media screen and (max-width:800px) {
-            .lft2 {
-                display: block;
-                width: 100%;
-                float: none;
-                padding-right: none;
-                padding-top: none;
-            }
-
-            .clg-logo-text {
-                text-align: center;
-                position: relative;
-                /* top: -103px; */
-                /* float: right; */
-                font-size: 15px;
-            }
-
-            .click-clm1 {
-                /*position: relative;*/
-                /*left: 79%;*/
-                /*top: 17px;*/
-                display: inline-block;
-            }
-
-            .click-clm2 {
-                /*position: relative;*/
-                /*left: 79%;*/
-                /*top: 35px;*/
-                display: inline-block;
-            }
-
-            #notic {
-                width: 80%;
-                padding: 20px;
-            }
-        }
-
-        @media screen and (max-width:320px) {
-            .click-clm1 {
-                position: relative;
-                /*left: 79%;*/
-                top: -17px;
-                display: inline-block;
-            }
-
-            .click-clm2 {
-                position: relative;
-                /*left: 79%;*/
-                top: 17px;
-                display: inline-block;
-            }
-
-        }
-
-        #notic {
-            width: 75%;
-            padding: 30px;
-            border: 2px solid rgb(241, 103, 48);
-            margin: auto;
-            margin-top: 40px;
-            border-radius: 13px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 1px 1px 15px rgb(128, 124, 124);
-            color: rgb(0, 0, 0);
-        }
-
-        #notic h2 {
-            text-align: center;
-            width: 97%;
-            position: relative;
-            top: -50px;
-            border-radius: 13px;
-            background-color: rgb(218 66 45);
-            color: white;
-            padding: 13px;
-        }
-    </style>
+    <title>kalongkapilividyapith</title>
 </head>
-
 
 <body>
     <div id="main-body">
         <div id="body">
-            <%- include('header.ejs') %>
+            <%- include('./partials/header.ejs') %>
                 <!-- ==================logo & name  -->
                 <div id="lgcname-div">
                     <div id="lgcname" style="background-color: white;"> <strong>
@@ -271,62 +71,62 @@
             <div class="slideshow-container">
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/college.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/college.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: block;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-2.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-2.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-3.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-3.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-4.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-4.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-5.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-5.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-6.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-6.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-7.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-7.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-8.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-8.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-9.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-9.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-10.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-10.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-11.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-11.jpeg">
                     <div class="text"></div>
                 </div>
                 <div class="mySlides fade" style="display: none;">
                     <div class="numbertext"></div>
-                    <img class="scrolling" src="./static/assets/img/slider-12.jpeg">
+                    <img class="scrolling" src="./static/assets/slider-img/slider-12.jpeg">
                     <div class="text"></div>
                 </div>
 
@@ -365,7 +165,7 @@
                 Commerce stream) is situated at A.D.P. Road, Christian Patty , Nagaon
                 .We are consistently producing outstanding result...
             </p>
-            <a href="/p/about-us.htm"> <button>Read more</button></a>
+            <a href="/p/about-us"> <button>Read more</button></a>
         </div>
         <br>
         <br>
@@ -393,7 +193,7 @@
                     named as Kalong Kapili Vidyapith , after
                     the two important rivers Kalong and Kapili flowing through the heart of undivided Nagaon District .
                 </p>
-                <a href="/p/about-principal.htm"> <button>Read more</button></a>
+                <a href="/p/about-principal"> <button>Read more</button></a>
             </div>
         </div>
         <br>
@@ -417,7 +217,7 @@
                     pursue through the contents of this website, you will
                     get a sense of the rich flavour of life at our college.
                 </p>
-                <a href="/p/rector.htm"> <button>Read more</button></a>
+                <a href="/p/rector"> <button>Read more</button></a>
             </div>
         </div>
         <br><br>
@@ -438,7 +238,7 @@
                     our college website. This website has been developed to enable everyone to become familiar with KKV,
                     its policies and other procedures.
                 </p>
-                <a href="/p/aboutvp.htm"> <button>Read more</button></a>
+                <a href="/p/aboutvp"> <button>Read more</button></a>
             </div>
         </div>
 
@@ -497,19 +297,19 @@
                     <p class="p1">Faculties</p>
                 </div>
             </a>
-            <a href="/p/Fees-Structure.htm">
+            <a href="/p/Fees-Structure">
                 <div>
                     <img src="./static/assets/img/fees.png" alt="">
                     <p class="p1">Fees Structure</p>
                 </div>
             </a>
-            <a href="/p/Rules-Regulations.htm">
+            <a href="/p/Rules-Regulations">
                 <div>
                     <img src="./static/assets/img/rulesrr.png" alt="">
                     <p class="p1">Rules &amp; Regulations</p>
                 </div>
             </a>
-            <a href="/p/Facilities.htm">
+            <a href="/p/Facilities">
                 <div>
                     <img src="./static/assets/img/facilities.png" alt="">
                     <p class="p1">Facilities</p>
@@ -810,7 +610,7 @@
 
             <div class="frsify-footer">
                 <footer>
-                    <%- include('footer.ejs') %>
+                    <%- include('./partials/footer.ejs') %>
                 </footer>
 
             </div>

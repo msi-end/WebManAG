@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="import@node.js.img/css.png" type="image/x-icon">
-    <script src="/js/import@node-js2.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/styleforlast-glan.css">
     <title>About Principal</title>
 </head>
 <style>
@@ -26,22 +28,17 @@
         }
     }
 </style>
-<script src="/js/import@node-js.js"></script>
 
 <body>
     <header>
-        <div w3-include-html="/header.html">
-        </div>
-        <script>
-            includeHTML();
-        </script>
+        <%- include('../partials/header.ejs') %>
 
     </header>
 
     <!-- =========here all text ================= -->
     <div id="text">
         <h1>PRINCIPAL'S MESSAGE </h1>
-        <img src="/import@node.js.img/bonashree.jpg" alt="">
+        <img src="/img/bonashree.jpg" alt="">
 
         <h3>Banashree Agasty</h3>
         <p> I am extremely delighted to welcome you Kalong Kapili Vidyapith , the college with an excellent academic reputation since its inception .The college established in the year 2004, is symbolically named as Kalong Kapili Vidyapith , after the two
@@ -58,13 +55,7 @@
     <!-- =========here all text ================= -->
 
     <footer>
-        <div w3-include-html="/footer.html">
-        </div>
-        <script>
-            includeHTML();
-        </script>
-
-
+      <%- include('../partials/footer.ejs') %>
     </footer>
 
 </body>
