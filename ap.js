@@ -1,10 +1,9 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
-app.use(express.urlencoded({ extended: true }));
 
 // app.engine('html', require('ejs').renderFile)
 
@@ -12,7 +11,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', (req, res) => {
-    res.status(200).render('index.ejs');
+    res.status(200).send(' dvbdfvd/views/index.ejs');
 })
 
 
