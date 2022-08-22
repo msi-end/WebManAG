@@ -2,22 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/js/import@node-js2.js"></script>
-    <script src="/js/import@node-js.js"></script>
-
-    <title>Facilities</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/styleforlast-glan.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <title>About Principal</title>
 </head>
-
 <body>
     <header>
-        <div w3-include-html="/header.html">
-        </div>
-        <script>
-            includeHTML();
-        </script>
+        <%- include('../partials/header.ejs') %>
+        <br><br>
     </header>
     <!-- =========here all text ================= -->
     <div id="text">
@@ -52,11 +50,8 @@
     <!-- =========here all text ================= -->
 
     <footer>
-        <div w3-include-html="/footer.html">
-        </div>
-        <script>
-            includeHTML();
-        </script>
+        <br><br>
+        <%- include('../partials/footer.ejs') %>
     </footer>
 </body>
 

@@ -251,17 +251,17 @@
         </div>
 
         <div id="stream-icon">
-            <div onclick="arts() " id="arts">
+            <div onclick="modelWindow(this)" id="arts" title="Arts">
                 <h4>Arts</h4>
                 <img src="./static/assets/img/arts.png" alt="">
                 <p>[Subject Offered]</p>
             </div>
-            <div onclick="science() " id="science">
+            <div onclick="modelWindow(this) " id="science" title="Science">
                 <h4>Science</h4>
                 <img src="./static/assets/img/science.png" alt="">
                 <p>[Subject Offered]</p>
             </div>
-            <div onclick="commerce() " id="commerce">
+            <div onclick="modelWindow(this) " id="commerce" title="Commerce">
                 <h4>Commerce</h4>
                 <img src="./static/assets/img/commerce.png" alt="">
                 <p>[Subject Offered]</p>
@@ -281,7 +281,7 @@
 
 
 
-        <a href="/registration-form.php">
+        <a href="/registration-form">
             <button class="button1"><strong>Apply For Admission</strong></button>
         </a>
 
@@ -291,7 +291,7 @@
 
 
         <div id="last-icon">
-            <a href="/our%20staf/">
+            <a href="/our-staf/">
                 <div>
                     <img src="./static/assets/img/feculties.png" alt="">
                     <p class="p1">Faculties</p>
@@ -318,12 +318,10 @@
         </div>
         <br>
     </div>
-    <!-- ===============================
- -->
 
 
-
-
+    <!-- News & Events  -->
+    <!-- =============================== -->
     <style>
         .png-image {
             background-color: #ffffff;
@@ -344,11 +342,6 @@
             background: rgb(0, 0, 0);
         }
     </style>
-
-
-
-    <link rel="stylesheet" href="./static/assets/img/styleforlast-glan.css">
-
     <div id="last-glan">
         <div class="last-glan-child">
             <a href="/news">
@@ -437,22 +430,7 @@
             </a>
         </div>
     </div>
-
-    <script src="./static/assets/img/styleforlast-glan.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="/static/js/script.js"
     <script>
         var slideIndex = 0;
         showSlides();
@@ -476,351 +454,82 @@
             setTimeout(showSlides, 4000); // Change image every 5 seconds
         }
     </script>
+
+
+    <!-- ===== footer =-========== -->
     <footer>
-        <div>
-
-
-
-
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./static/assets/img/ionicons.min.css">
-            <script src="./static/assets/img/bootstrap.bundle.min.js"></script>
-
-
-            <style>
-                body {
-                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                }
-
-                .frsify-footer {
-                    margin-top: 0px;
-                    padding: 50px 0;
-                    color: #ffffff;
-                    background-color: #200202;
-                }
-
-                .frsify-footer h3 {
-                    margin-top: 0;
-                    margin-bottom: 12px;
-                    font-weight: bold;
-                    font-size: 16px;
-                }
-
-                .frsify-footer ul {
-                    padding: 0;
-                    list-style: none;
-                    line-height: 1.6;
-                    font-size: 14px;
-                    margin-bottom: 0;
-                }
-
-                .mns a:hover {
-                    background-color: rgb(235, 68, 68);
-                    padding: 5px;
-                    border-radius: 5px;
-                    transition-property: all;
-                    transition-duration: .3s;
-                    transition-timing-function: ease-out;
-                }
-
-                .frsify-footer ul a {
-                    color: inherit;
-                    text-decoration: none;
-                    opacity: 1;
-                }
-
-                .frsify-footer ul a:hover {
-                    opacity: 1;
-                }
-
-                @media (max-width:767px) {
-                    .frsify-footer .item:not(.social) {
-                        text-align: center;
-                        padding-bottom: 20px;
-                    }
-                }
-
-                .frsify-footer .item.text {
-                    margin-bottom: 36px;
-                }
-
-                @media (max-width:767px) {
-                    .frsify-footer .item.text {
-                        margin-bottom: 0;
-                    }
-                }
-
-                .frsify-footer .item.text p {
-                    opacity: 1;
-                    margin-bottom: 0;
-                }
-
-                .frsify-footer .item.social {
-                    text-align: center;
-                }
-
-                @media (max-width:991px) {
-                    .frsify-footer .item.social {
-                        text-align: center;
-                        margin-top: 20px;
-                    }
-                }
-
-                .frsify-footer .item.social>a {
-                    font-size: 20px;
-                    width: 36px;
-                    height: 36px;
-                    line-height: 36px;
-                    display: inline-block;
-                    text-align: center;
-                    border-radius: 50%;
-                    background-color: #fff;
-                    box-shadow: 0 0 0 1px rgba(214, 59, 59, 0.993);
-                    margin: 0 8px;
-                    color: rgb(170, 15, 15) !important;
-                    opacity: 1;
-                }
-
-                .row {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-                }
-
-                @media screen and (min-width:800px) {
-                    .row {
-                        width: 1000px;
-                        margin: auto;
-                    }
-                }
-
-                @media screen and (max-width:500px) {
-                    .mns {
-                        width: 300px;
-                    }
-                }
-
-                footer {
-                    margin: 0px;
-                }
-            </style>
-
-
-            <div style="height: 70px; background-color: rgb(255, 255, 255);"></div>
-
-            <div class="frsify-footer">
-                <footer>
-                    <%- include('./partials/footer.ejs') %>
-                </footer>
-
+        <%- include('./partials/footer.ejs') %>
+    </footer>
+    <!-- Arts -->
+    <div id="artsh" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Arts</h2>
             </div>
-            <style>
-                .modal {
-                    display: none;
-                    position: fixed;
-                    z-index: 1;
-                    padding-top: 100px;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    overflow: auto;
-                    background-color: rgb(0, 0, 0);
-                    background-color: rgba(0, 0, 0, 0.4);
-                }
-
-                .modal-content {
-                    position: relative;
-                    background-color: #fefefe;
-                    margin: auto;
-                    padding: 0;
-                    border: 1px solid #888;
-                    width: 80%;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                    -webkit-animation-name: animatetop;
-                    -webkit-animation-duration: 0.4s;
-                    animation-name: animatetop;
-                    animation-duration: 0.4s;
-                    border-radius: 13px;
-                }
-
-                @-webkit-keyframes animatetop {
-                    from {
-                        top: -300px;
-                        opacity: 0
-                    }
-
-                    to {
-                        top: 0;
-                        opacity: 1
-                    }
-                }
-
-                @keyframes animatetop {
-                    from {
-                        top: -300px;
-                        opacity: 0
-                    }
-
-                    to {
-                        top: 0;
-                        opacity: 1
-                    }
-                }
-
-                /* The Close Button */
-
-                .close {
-                    color: rgba(255, 255, 255, 0);
-                    float: right;
-                    font-size: 28px;
-                    font-weight: bold;
-                }
-
-                .close:hover,
-                .close:focus {
-                    color: #000;
-                    text-decoration: none;
-                    cursor: pointer;
-                }
-
-                .modal-header {
-                    padding: 2px 16px;
-                    background-color: #ff5100;
-                    color: white;
-                }
-
-                .modal-body {
-                    padding: 2px 16px;
-                }
-
-                .modal-footer {
-                    padding: 2px 16px;
-                    background-color: #fc5000;
-                    color: white;
-                }
-            </style>
-            <div id="artsh" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">×</span>
-                        <h2>Arts</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p value="Economics">English</p>
-                        <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                        <p value="Economics">Economics</p>
-                        <p value="Political Science">Political Science</p>
-                        <p value="Education">Education</p>
-                        <p value="Logic &amp; Philosophy">Logic &amp; Philosophy</p>
-                        <p value="Sociology">Sociology</p>
-                        <p value="Geography">Geography</p>
-                        <p value="Advance Assamese / Advance Hindi">Advance Assamese / Advance Hindi</p>
-                        <p value="Mathematics">Mathematics</p>
-                        <p value="Sanskrit">Sanskrit</p>
-                        <p value="Swadesh  Adhyayan">Swadesh Adhyayan</p>
-                        <p value="Bihu">Bihu</p>
-                        <p value="Computer science">Computer science</p>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+            <div class="modal-body">
+                <p value="Economics">English</p>
+                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                <p value="Economics">Economics</p>
+                <p value="Political Science">Political Science</p>
+                <p value="Education">Education</p>
+                <p value="Logic &amp; Philosophy">Logic &amp; Philosophy</p>
+                <p value="Sociology">Sociology</p>
+                <p value="Geography">Geography</p>
+                <p value="Advance Assamese / Advance Hindi">Advance Assamese / Advance Hindi</p>
+                <p value="Mathematics">Mathematics</p>
+                <p value="Sanskrit">Sanskrit</p>
+                <p value="Swadesh  Adhyayan">Swadesh Adhyayan</p>
+                <p value="Bihu">Bihu</p>
+                <p value="Computer science">Computer science</p>
             </div>
-            <script>
-                function arts() {
-                    var modal = document.getElementById("artsh");
-                    var span = document.getElementsByClassName("close")[0];
-
-                    modal.style.display = "block";
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                }
-            </script>
-            <div id="scienceh" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">×</span>
-                        <h2>Science</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p value="Economics">English</p>
-                        <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                        <p> Physics</p>
-                        <p>Chemistry</p>
-                        <p>Mathematics</p>
-                        <p>Biology</p>
-                        <p> Statistics</p>
-                        <p> Geography and Economics</p>
-                        <p> Computer Science</p>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+            <div class="modal-footer">
             </div>
-            <script>
-                function science() {
-                    var modal = document.getElementById("scienceh");
-                    var span = document.getElementsByClassName("close")[0];
-                    modal.style.display = "block";
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                }
-            </script>
-            <div id="commerceh" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">×</span>
-                        <h2>Commerce</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p value="Economics">English</p>
-                        <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                        <p value="Accountancy">Accountancy</p>
-                        <p value=" Business Mathematics and statistics">Business Mathematics and Statistics </p>
-                        <p value="Business Studies">Business Studies</p>
-                        <p value="Economics">Economics</p>
-                        <p value="Finance">Finance(Banking)</p>
-                        <p> Computer Science</p>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+        </div>
+    </div>
+    <!-- science -->
+    <div id="scienceh" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Science</h2>
             </div>
-            <script>
-                function commerce() {
-                    var modal = document.getElementById("commerceh");
-                    var span = document.getElementsByClassName("close")[0];
-                    modal.style.display = "block";
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                }
-            </script>
-            <!-- </div>
-    <div id="deskmob" style="position: absolute;top: 30%;text-align: center; color: rgb(51, 51, 51); width: 96%;">
-
-        <h1> Site is not available for desktop version on mobile ,<br> So Use in mobile version or open this site in a Desktop.
-        </h1>
-
-    </div> -->
-
+            <div class="modal-body">
+                <p value="Economics">English</p>
+                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                <p> Physics</p>
+                <p>Chemistry</p>
+                <p>Mathematics</p>
+                <p>Biology</p>
+                <p> Statistics</p>
+                <p> Geography and Economics</p>
+                <p> Computer Science</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <!-- Commerce -->
+    <div id="commerceh" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Commerce</h2>
+            </div>
+            <div class="modal-body">
+                <p value="Economics">English</p>
+                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                <p value="Accountancy">Accountancy</p>
+                <p value=" Business Mathematics and statistics">Business Mathematics and Statistics </p>
+                <p value="Business Studies">Business Studies</p>
+                <p value="Economics">Economics</p>
+                <p value="Finance">Finance(Banking)</p>
+                <p> Computer Science</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
 
 </body>
 

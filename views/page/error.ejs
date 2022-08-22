@@ -2,18 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/styleforlast-glan.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
     <title>Page 404!</title>
+   
 </head>
 
 <body>
+    <header>
+        <%- include('../partials/header.ejs') %>
+        <br><br>
+    </header>
     <div style="margin: auto; width: 70%; text-align: center;margin-top: 10%;">
         <h1>Page not found </h1>
 
         <h1 style="font-size: 130px;font-family: 'Times New Roman', Times, serif;">404! </h1>
     </div>
+    <footer>
+        <br><br>
+        <%- include('../partials/footer.ejs') %>
+    </footer>
 </body>
-
 </html>

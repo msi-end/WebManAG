@@ -35,8 +35,8 @@ router.get('/Fees-Structure', (req, res) => {
     res.status(200).render('./page/Fees-Structure')
 
 })
-router.get('/Rules-Regulation', (req, res) => {
-    res.status(200).render('./page/Rules-Regulation')
+router.get('/Rules-Regulations', (req, res) => {
+    res.status(200).render('./page/Rules-Regulations')
 
 })
 module.exports = router;

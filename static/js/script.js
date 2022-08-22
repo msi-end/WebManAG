@@ -29,16 +29,43 @@ function myFunction() {
     }
 }
 
-function modelWindow() {
-    var modal = document.getElementById("eight");
-    var span = document.getElementsByClassName("close")[0];
-    modal.style.display = "block";
-    span.onclick = function() {
-        modal.style.display = "none";
+// function modelWindow() {
+//     var modal = document.getElementById("  ");
+//     var span = document.getElementsByClassName("close")[0];
+//     modal.style.display = "block";
+//     span.onclick = function() {
+//         modal.style.display = "none";
+//     }
+//     window.onclick = function(event) {
+//         if (event.target == modal) {
+//             modal.style.display = "none";
+//         }
+//     }
+// };
+
+function modelWindow(params) {
+
+    if (params.title === 'Arts') {
+        id = 'artsh'
+        displayModel(id)
+    } else if (params.title === 'Science') {
+        displayModel(id)
+
+    } else {
+        displayModel(id)
     }
-    window.onclick = function(event) {
-        if (event.target == modal) {
+    function displayModel(id) {
+        var modal = document.getElementById(id);
+        console.log(model)
+        var span = document.getElementsByClassName("close")[0];
+        modal.style.display = "block";
+        span.onclick = function () {
             modal.style.display = "none";
         }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     }
-};
+}
