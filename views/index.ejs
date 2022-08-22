@@ -215,83 +215,53 @@
 <body>
     <div id="main-body">
         <div id="body">
-            <div class="nav-main">
-                <div id="nav-whole">
-                    <a href="/">
-
-                    </a>
-                    <a href="/p/Contact.htm" class="nav-link">Contact Us</a>
-                    <a href="/p/Faculties.htm" class="nav-link">Faculties</a>
-                    <a href="/registration-form.php" class="nav-link">Admission</a>
-                    <a href="/p/about-us.htm" class="nav-link">About Us</a>
-                    <a href="/" class="nav-link">Home</a>
-                </div>
-                <!-- onclick="navManu()" -->
-                <img class="manu-nav" onclick="myFunction()" src="./static/assets/img/icom-manu.png" alt="">
-                <div class="manu" style="display: none;" id="divformedmob">
-                    <a href="/" class="media-mobile">Home</a>
-                    <hr>
-                    <a href="/p/about-us.htm" class="media-mobile">About Us</a>
-                    <hr>
-                    <a href="/registration-form.php" class="media-mobile">Admission</a>
-                    <hr>
-                    <a href="/p/Contact.htm" class="media-mobile">Contact Us</a>
-                    <hr>
-                    <a href="/p/Faculties.htm" class="media-mobile">Faculties</a>
-                    <hr>
-                    <a href="/p/Fees-Structure.htm" class="media-mobile">Fee Structure</a>
-                    <hr>
-                    <a href="/p/Rules-Regulations.htm" class="media-mobile">Rules &amp; Regulations</a>
-                    <script src="./static/assets/img/import@node-js.js"></script>
-                </div>
-            </div>
-
-            <!-- ==================logo & name  -->
-            <div id="lgcname-div">
-                <div id="lgcname" style="background-color: white;"> <strong>
-                        <a href="/"> <img style="border-radius: 100px;" src="./static/assets/img/clg.jpeg"
-                                alt="college-logo">
-                        </a></strong>
-                    <div class="clg-logo-text"><strong><a href="/">
-                                <p id="clg-nm" class="lgtx">Kalong Kapili Vidyapith</p>
-                                <hr id="hr">
-                                <p id="clg-nma" class="lgtx">কলং কপিলী বিদ্যাপীঠ</p>
-                            </a>
-                        </strong>
+            <%- include('header.ejs') %>
+                <!-- ==================logo & name  -->
+                <div id="lgcname-div">
+                    <div id="lgcname" style="background-color: white;"> <strong>
+                            <a href="/"> <img style="border-radius: 100px;" src="./static/assets/img/clg.jpeg"
+                                    alt="college-logo">
+                            </a></strong>
+                        <div class="clg-logo-text"><strong><a href="/">
+                                    <p id="clg-nm" class="lgtx">Kalong Kapili Vidyapith</p>
+                                    <hr id="hr">
+                                    <p id="clg-nma" class="lgtx">কলং কপিলী বিদ্যাপীঠ</p>
+                                </a>
+                            </strong>
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-            <!-- =======hs and scl  -->
-            <div id="clg-nav">
+                <!-- =======hs and scl  -->
+                <div id="clg-nav">
 
-                <div class="section">
-                    <a href="/#scr">
-                        <h2>Higher Secondary Section </h2>
-                        <p>
-                            <strong> Arts,&nbsp;Science&nbsp;and&nbsp;Commerce
-                                (English &amp; Assamese Medium)</strong><br> ADP Road, Christianpatty,
-                            Nagaon(Assam)<br><br>
-                        </p>
-                        <p class="click-clm1">Click Here</p>
-                    </a>
+                    <div class="section">
+                        <a href="/#scr">
+                            <h2>Higher Secondary Section </h2>
+                            <p>
+                                <strong> Arts,&nbsp;Science&nbsp;and&nbsp;Commerce
+                                    (English &amp; Assamese Medium)</strong><br> ADP Road, Christianpatty,
+                                Nagaon(Assam)<br><br>
+                            </p>
+                            <p class="click-clm1">Click Here</p>
+                        </a>
+                    </div>
+
+
+
+                    <div class="section">
+                        <a href="https://school.kalongkapilividyapith.in/">
+                            <h2> School Section </h2>
+                            <p>
+                                <strong>
+                                    Class I to X (English &amp; Assamese Medium)
+                                </strong><br>G.M Road, (Back side of Nowgong College)
+                            </p>
+                            <p class="click-clm2">Click Here</p>
+                        </a>
+                    </div>
                 </div>
-
-
-
-                <div class="section">
-                    <a href="https://school.kalongkapilividyapith.in/">
-                        <h2> School Section </h2>
-                        <p>
-                            <strong>
-                                Class I to X (English &amp; Assamese Medium)
-                            </strong><br>G.M Road, (Back side of Nowgong College)
-                        </p>
-                        <p class="click-clm2">Click Here</p>
-                    </a>
-                </div>
-            </div>
         </div>
 
 
@@ -840,300 +810,210 @@
 
             <div class="frsify-footer">
                 <footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="mns">
-                                <h3>Services</h3>
-                                <ul>
-                                    <li><a href="/p/about-us.htm">About Us</a></li>
-                                    <li><a href="/p/registration-form.html">Online Admission</a></li>
-                                    <li><a href="/p/Faculties.htm">Faculties</a></li>
-                                    <li> <a href="/p/Fees-Structure.htm">Fee Structure</a></li>
-                                    <li> <a href="/p/Rules-Regulations.htm">Rules &amp; Regulations</a></li>
-                                    <li><a href="/p/Contact.htm">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="mns">
-                                <h3>About</h3>
-                                <ul>
-                                    <li><a href="/our%20staf/">Teaching Staff</a></li>
-                                    <li><a href="/our%20staf/index.html#non-teaching">Non-Teaching Staff</a></li>
-                                    <li>
-                                        <a href="/gallery">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="/#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="/#"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col item social">
-                                <a href="https://www.facebook.com/111131668129025/posts/111140171461508/?sfnsn=wiwspmo">
-                                    <i class="icon ion-social-facebook"></i></a>
-                                <a href="https://www.youtube.com/channel/UCXevp_y3IWZ2zMzXfeFD6tA">
-                                    <i class="icon ion-social-youtube"></i></a>
-                                <a href="/#">
-                                    <i class="icon ion-social-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    <%- include('footer.ejs') %>
                 </footer>
-
 
             </div>
             <style>
-                .last-cpy {
-                    height: 50px;
-                    margin: 0%;
+                .modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 1;
+                    padding-top: 100px;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgb(0, 0, 0);
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
 
-                    background-color: #200202;
+                .modal-content {
                     position: relative;
-                    bottom: -1px;
-                    padding-top: 13px;
-
-                    color: azure;
-                    text-align: center;
-                    /* position: relative; */
-                    /* top: -17px; */
-
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 0;
+                    border: 1px solid #888;
+                    width: 80%;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    -webkit-animation-name: animatetop;
+                    -webkit-animation-duration: 0.4s;
+                    animation-name: animatetop;
+                    animation-duration: 0.4s;
+                    border-radius: 13px;
                 }
 
-                .last-cpy * {
-                    font-family: 'Fuggles', cursive;
-                    font-family: 'Indie Flower', cursive;
-                    font-size: 16px;
-                    margin: 0px;
+                @-webkit-keyframes animatetop {
+                    from {
+                        top: -300px;
+                        opacity: 0
+                    }
+
+                    to {
+                        top: 0;
+                        opacity: 1
+                    }
                 }
 
-                .last-cpy a {
+                @keyframes animatetop {
+                    from {
+                        top: -300px;
+                        opacity: 0
+                    }
+
+                    to {
+                        top: 0;
+                        opacity: 1
+                    }
+                }
+
+                /* The Close Button */
+
+                .close {
+                    color: rgba(255, 255, 255, 0);
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                    color: #000;
                     text-decoration: none;
-                    color: rgb(214, 236, 12);
-                    margin: 0px;
+                    cursor: pointer;
+                }
 
+                .modal-header {
+                    padding: 2px 16px;
+                    background-color: #ff5100;
+                    color: white;
+                }
 
+                .modal-body {
+                    padding: 2px 16px;
+                }
+
+                .modal-footer {
+                    padding: 2px 16px;
+                    background-color: #fc5000;
+                    color: white;
                 }
             </style>
-            <link rel="preconnect" href="https://fonts.googleapis.com/">
-            <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-            <link href="./static/assets/img/css2" rel="stylesheet">
-
-            <div class="last-cpy">
-                <p>Designed and Managed By: <a href="http://fresify.com/"> Fresify</a> &nbsp;|<a
-                        href="/http;//fresify.com/">
-                        Contact Us</a></p>
+            <div id="artsh" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Arts</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p value="Economics">English</p>
+                        <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                        <p value="Economics">Economics</p>
+                        <p value="Political Science">Political Science</p>
+                        <p value="Education">Education</p>
+                        <p value="Logic &amp; Philosophy">Logic &amp; Philosophy</p>
+                        <p value="Sociology">Sociology</p>
+                        <p value="Geography">Geography</p>
+                        <p value="Advance Assamese / Advance Hindi">Advance Assamese / Advance Hindi</p>
+                        <p value="Mathematics">Mathematics</p>
+                        <p value="Sanskrit">Sanskrit</p>
+                        <p value="Swadesh  Adhyayan">Swadesh Adhyayan</p>
+                        <p value="Bihu">Bihu</p>
+                        <p value="Computer science">Computer science</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
+            <script>
+                function arts() {
+                    var modal = document.getElementById("artsh");
+                    var span = document.getElementsByClassName("close")[0];
 
-
-
-        </div>
-        <script>
-            includeHTML();
-        </script>
-    </footer>
-
-
-    <style>
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-
-        .modal-content {
-            position: relative;
-            background-color: #fefefe;
-            margin: auto;
-            padding: 0;
-            border: 1px solid #888;
-            width: 80%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            -webkit-animation-name: animatetop;
-            -webkit-animation-duration: 0.4s;
-            animation-name: animatetop;
-            animation-duration: 0.4s;
-            border-radius: 13px;
-        }
-
-        @-webkit-keyframes animatetop {
-            from {
-                top: -300px;
-                opacity: 0
-            }
-
-            to {
-                top: 0;
-                opacity: 1
-            }
-        }
-
-        @keyframes animatetop {
-            from {
-                top: -300px;
-                opacity: 0
-            }
-
-            to {
-                top: 0;
-                opacity: 1
-            }
-        }
-
-        /* The Close Button */
-
-        .close {
-            color: rgba(255, 255, 255, 0);
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .modal-header {
-            padding: 2px 16px;
-            background-color: #ff5100;
-            color: white;
-        }
-
-        .modal-body {
-            padding: 2px 16px;
-        }
-
-        .modal-footer {
-            padding: 2px 16px;
-            background-color: #fc5000;
-            color: white;
-        }
-    </style>
-    <div id="artsh" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">×</span>
-                <h2>Arts</h2>
-            </div>
-            <div class="modal-body">
-                <p value="Economics">English</p>
-                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                <p value="Economics">Economics</p>
-                <p value="Political Science">Political Science</p>
-                <p value="Education">Education</p>
-                <p value="Logic &amp; Philosophy">Logic &amp; Philosophy</p>
-                <p value="Sociology">Sociology</p>
-                <p value="Geography">Geography</p>
-                <p value="Advance Assamese / Advance Hindi">Advance Assamese / Advance Hindi</p>
-                <p value="Mathematics">Mathematics</p>
-                <p value="Sanskrit">Sanskrit</p>
-                <p value="Swadesh  Adhyayan">Swadesh Adhyayan</p>
-                <p value="Bihu">Bihu</p>
-                <p value="Computer science">Computer science</p>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-    <script>
-        function arts() {
-            var modal = document.getElementById("artsh");
-            var span = document.getElementsByClassName("close")[0];
-
-            modal.style.display = "block";
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+                    modal.style.display = "block";
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
                 }
-            }
-        }
-    </script>
-    <div id="scienceh" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">×</span>
-                <h2>Science</h2>
+            </script>
+            <div id="scienceh" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Science</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p value="Economics">English</p>
+                        <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                        <p> Physics</p>
+                        <p>Chemistry</p>
+                        <p>Mathematics</p>
+                        <p>Biology</p>
+                        <p> Statistics</p>
+                        <p> Geography and Economics</p>
+                        <p> Computer Science</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <p value="Economics">English</p>
-                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                <p> Physics</p>
-                <p>Chemistry</p>
-                <p>Mathematics</p>
-                <p>Biology</p>
-                <p> Statistics</p>
-                <p> Geography and Economics</p>
-                <p> Computer Science</p>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-    <script>
-        function science() {
-            var modal = document.getElementById("scienceh");
-            var span = document.getElementsByClassName("close")[0];
-            modal.style.display = "block";
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+            <script>
+                function science() {
+                    var modal = document.getElementById("scienceh");
+                    var span = document.getElementsByClassName("close")[0];
+                    modal.style.display = "block";
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
                 }
-            }
-        }
-    </script>
-    <div id="commerceh" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">×</span>
-                <h2>Commerce</h2>
+            </script>
+            <div id="commerceh" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Commerce</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p value="Economics">English</p>
+                        <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                        <p value="Accountancy">Accountancy</p>
+                        <p value=" Business Mathematics and statistics">Business Mathematics and Statistics </p>
+                        <p value="Business Studies">Business Studies</p>
+                        <p value="Economics">Economics</p>
+                        <p value="Finance">Finance(Banking)</p>
+                        <p> Computer Science</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <p value="Economics">English</p>
-                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                <p value="Accountancy">Accountancy</p>
-                <p value=" Business Mathematics and statistics">Business Mathematics and Statistics </p>
-                <p value="Business Studies">Business Studies</p>
-                <p value="Economics">Economics</p>
-                <p value="Finance">Finance(Banking)</p>
-                <p> Computer Science</p>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-    <script>
-        function commerce() {
-            var modal = document.getElementById("commerceh");
-            var span = document.getElementsByClassName("close")[0];
-            modal.style.display = "block";
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+            <script>
+                function commerce() {
+                    var modal = document.getElementById("commerceh");
+                    var span = document.getElementsByClassName("close")[0];
+                    modal.style.display = "block";
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
                 }
-            }
-        }
-    </script>
-    <!-- </div>
+            </script>
+            <!-- </div>
     <div id="deskmob" style="position: absolute;top: 30%;text-align: center; color: rgb(51, 51, 51); width: 96%;">
 
         <h1> Site is not available for desktop version on mobile ,<br> So Use in mobile version or open this site in a Desktop.
