@@ -6,9 +6,13 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/model.css">
     <link rel="stylesheet" href="/static/css/styleforlast-glan.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+
     <title>kalongkapilividyapith</title>
 </head>
 
@@ -253,17 +257,17 @@
         <div id="stream-icon">
             <div onclick="modelWindow(this)" id="arts" title="Arts">
                 <h4>Arts</h4>
-                <img src="./static/assets/img/arts.png" alt="">
+                <img src="./static/assets/logos/arts.png" alt="">
                 <p>[Subject Offered]</p>
             </div>
             <div onclick="modelWindow(this) " id="science" title="Science">
                 <h4>Science</h4>
-                <img src="./static/assets/img/science.png" alt="">
+                <img src="./static/assets/logos/science.png" alt="">
                 <p>[Subject Offered]</p>
             </div>
             <div onclick="modelWindow(this) " id="commerce" title="Commerce">
                 <h4>Commerce</h4>
-                <img src="./static/assets/img/commerce.png" alt="">
+                <img src="./static/assets/logos/commerce.png" alt="">
                 <p>[Subject Offered]</p>
             </div>
 
@@ -293,25 +297,25 @@
         <div id="last-icon">
             <a href="/our-staf/">
                 <div>
-                    <img src="./static/assets/img/feculties.png" alt="">
+                    <img src="./static/assets/logos/faculties.png" alt="">
                     <p class="p1">Faculties</p>
                 </div>
             </a>
             <a href="/p/Fees-Structure">
                 <div>
-                    <img src="./static/assets/img/fees.png" alt="">
+                    <img src="./static/assets/logos/fees.png" alt="">
                     <p class="p1">Fees Structure</p>
                 </div>
             </a>
             <a href="/p/Rules-Regulations">
                 <div>
-                    <img src="./static/assets/img/rulesrr.png" alt="">
+                    <img src="./static/assets/logos/rulesrr.png" alt="">
                     <p class="p1">Rules &amp; Regulations</p>
                 </div>
             </a>
             <a href="/p/Facilities">
                 <div>
-                    <img src="./static/assets/img/facilities.png" alt="">
+                    <img src="./static/assets/logos/facilities.png" alt="">
                     <p class="p1">Facilities</p>
                 </div>
             </a>
@@ -430,7 +434,7 @@
             </a>
         </div>
     </div>
-    <script src="/static/js/script.js"
+    <script src="/static/js/script.js"> </script>
     <script>
         var slideIndex = 0;
         showSlides();
@@ -458,79 +462,81 @@
 
     <!-- ===== footer =-========== -->
     <footer>
+        <br><br>
         <%- include('./partials/footer.ejs') %>
     </footer>
     <!-- Arts -->
-    <div id="artsh" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">×</span>
-                <h2>Arts</h2>
+    <div>
+        <div id="artsh" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Arts</h2>
+                </div>
+                <div class="modal-body">
+                    <p value="Economics">English</p>
+                    <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                    <p value="Economics">Economics</p>
+                    <p value="Political Science">Political Science</p>
+                    <p value="Education">Education</p>
+                    <p value="Logic &amp; Philosophy">Logic &amp; Philosophy</p>
+                    <p value="Sociology">Sociology</p>
+                    <p value="Geography">Geography</p>
+                    <p value="Advance Assamese / Advance Hindi">Advance Assamese / Advance Hindi</p>
+                    <p value="Mathematics">Mathematics</p>
+                    <p value="Sanskrit">Sanskrit</p>
+                    <p value="Swadesh  Adhyayan">Swadesh Adhyayan</p>
+                    <p value="Bihu">Bihu</p>
+                    <p value="Computer science">Computer science</p>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
-            <div class="modal-body">
-                <p value="Economics">English</p>
-                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                <p value="Economics">Economics</p>
-                <p value="Political Science">Political Science</p>
-                <p value="Education">Education</p>
-                <p value="Logic &amp; Philosophy">Logic &amp; Philosophy</p>
-                <p value="Sociology">Sociology</p>
-                <p value="Geography">Geography</p>
-                <p value="Advance Assamese / Advance Hindi">Advance Assamese / Advance Hindi</p>
-                <p value="Mathematics">Mathematics</p>
-                <p value="Sanskrit">Sanskrit</p>
-                <p value="Swadesh  Adhyayan">Swadesh Adhyayan</p>
-                <p value="Bihu">Bihu</p>
-                <p value="Computer science">Computer science</p>
+        </div>
+        <!-- science -->
+        <div id="scienceh" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Science</h2>
+                </div>
+                <div class="modal-body">
+                    <p value="Economics">English</p>
+                    <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                    <p> Physics</p>
+                    <p>Chemistry</p>
+                    <p>Mathematics</p>
+                    <p>Biology</p>
+                    <p> Statistics</p>
+                    <p> Geography and Economics</p>
+                    <p> Computer Science</p>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
-            <div class="modal-footer">
+        </div>
+        <!-- Commerce -->
+        <div id="commerceh" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">×</span>
+                    <h2>Commerce</h2>
+                </div>
+                <div class="modal-body">
+                    <p value="Economics">English</p>
+                    <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
+                    <p value="Accountancy">Accountancy</p>
+                    <p value=" Business Mathematics and statistics">Business Mathematics and Statistics </p>
+                    <p value="Business Studies">Business Studies</p>
+                    <p value="Economics">Economics</p>
+                    <p value="Finance">Finance(Banking)</p>
+                    <p> Computer Science</p>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
         </div>
     </div>
-    <!-- science -->
-    <div id="scienceh" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">×</span>
-                <h2>Science</h2>
-            </div>
-            <div class="modal-body">
-                <p value="Economics">English</p>
-                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                <p> Physics</p>
-                <p>Chemistry</p>
-                <p>Mathematics</p>
-                <p>Biology</p>
-                <p> Statistics</p>
-                <p> Geography and Economics</p>
-                <p> Computer Science</p>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-    <!-- Commerce -->
-    <div id="commerceh" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">×</span>
-                <h2>Commerce</h2>
-            </div>
-            <div class="modal-body">
-                <p value="Economics">English</p>
-                <p value="Economics">M.I.L(Assamese, Bengali, Hindi)/Alternative English</p>
-                <p value="Accountancy">Accountancy</p>
-                <p value=" Business Mathematics and statistics">Business Mathematics and Statistics </p>
-                <p value="Business Studies">Business Studies</p>
-                <p value="Economics">Economics</p>
-                <p value="Finance">Finance(Banking)</p>
-                <p> Computer Science</p>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-
 </body>
 
 </html>

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+#title {
+    font-family: 'Rubik Dirt', cursive;
+    width: 100%;
+    height: 24px;
+    background-color: rgb(236, 92, 35);
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    color: white;
+    padding: 26px;
+
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h4 {
+    margin-top: 21px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.form-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 7px;
+    width: 29%;
+    height: 100px;
+
+}
+
+input {
+    border: 2px solid rgb(255, 131, 14);
+    border-radius: 5px;
+    width: 96%;
+    height: 23px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+input[value="Class X"] {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: medium;
+    font: italic small-caps bold 22px/30px Georgia, serif;
+}
+
+.m {
+    width: 50px;
+    padding-bottom: 50px;
+    display: inline-block;
+}
+
+.m1 {
+    width: 150px;
+    height: 23px;
+}
+
+.p1 {
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 8px;
+    position: relative;
+    bottom: 6px;
+    left: -10px;
+}
+
+#hrlst {
+    color: blue;
+}
+
+input[type=submit] {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 38px;
+    width: 160px;
+    background-color: rgb(248, 147, 14);
+    margin-bottom: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(241, 199, 150);
+}
+
+input[type=submit]:active {
+    background-color: #fff;
+}
+
+input[type=reset] {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    height: 38px;
+    width: 130px;
+    background-color: rgb(247, 132, 1);
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    border: 2px solid rgb(99, 33, 3);
+    height: auto;
+    padding: 0px;
+}
+
+input[type=file]::file-selector-button {
+    background-color: red;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+
+}
+
+
+.custom-file {
+    border: 2px solid rgb(216, 95, 95);
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(148, 13, 8);
+    color: white;
+    z-index: 1;
+    font-size: 19px;
+    border-radius: 8px;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+label:active {
+    background-color: #fff;
+    color: rgb(255, 103, 2);
+    border: none;
+}
+
+label:focus {
+    background-color: rgb(104, 0, 0);
+}
+#select-subject{
+    width: 60%;
+    margin: auto;
+}
+.select-list{
+    width: 49%;
+    display: inline-block;
+}
+
+select {
+    height: 37px;
+    width: 100%;
+    margin: 5px;
+    padding: 9px;
+    border-radius: 5px;
+    border: 2px solid rgb(231, 91, 10);
+    font-size: medium;
+    background-color: #fff;
+}
+
+input[type="radio"] {
+    margin-left: 20px;
+    border: 1px solid #888;
+}
+
+.sublist {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-main {
+    width: 100%;
+    margin-left: 0%;
+}
+
+
+

@@ -49,14 +49,15 @@ function modelWindow(params) {
         id = 'artsh'
         displayModel(id)
     } else if (params.title === 'Science') {
+        id = 'scienceh'
         displayModel(id)
 
     } else {
+        id = 'commerceh'
         displayModel(id)
     }
     function displayModel(id) {
         var modal = document.getElementById(id);
-        console.log(model)
         var span = document.getElementsByClassName("close")[0];
         modal.style.display = "block";
         span.onclick = function () {
