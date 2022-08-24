@@ -10,6 +10,7 @@ const log = require('./routes/log')
 
 
 
+
 //hello mintu sharma------------------
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
@@ -31,6 +32,10 @@ app.use(body.json());
 app.use('/p',mainRoute);
 app.use( panels);
 app.use(log);
+
+
+
+
 
 
 
