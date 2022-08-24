@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .form{
+        border: 2px inset black;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .header{
+        text-align: center;
+    }
+
+    .inp{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    input{
+        height: 25px;
+        width: 190px;
+    }
+
+    .ins{
+        margin-left: 22px;
+    }
+
+    .btn{
+        height: 40px;
+        width: 80px;
+        margin-left: 90px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 class="header">
+                Admin Login
+            </h2>
+            <br>
+            <div class="inp">
+                <form action="/data" method="post">
+                    Email: <input type="text" name="Email" class="ins"><br><br><br>
+                    Password: <input type="text" name="password" id=""><br><br>
+                   <button type="submit" class="btn">submit</button>
+                </form>
+            </div>
+           
+        </div> 
+    </div>
+    
+   
+
+</body>
+</html>

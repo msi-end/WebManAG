@@ -4,6 +4,10 @@ const app = express();
 const port = process.env.PORT || 3000;
 const mainRoute = require('./routes/index-route')
 const panels = require('./routes/panels')
+const body = require('body-parser')
+const log = require('./routes/log')
+
+
 
 
 //hello mintu sharma------------------
@@ -18,8 +22,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
     res.status(200).render('index');
 });
+
+app.use(body.urlencoded({ extended: false }));
+app.use(body.json());
+
+
+
 app.use('/p',mainRoute);
 app.use( panels);
+app.use(log);
+
+
 
 
 

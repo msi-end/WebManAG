@@ -39,4 +39,6 @@ router.get('/Rules-Regulations', (req, res) => {
     res.status(200).render('./page/Rules-Regulations')
 
 })
+
+
 module.exports = router;
