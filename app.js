@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const mainRoute = require('./routes/index-route')
 const panels = require('./routes/panels')
 
+
 //hello mintu sharma------------------
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
@@ -17,8 +18,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
     res.status(200).render('index');
 });
-app.use('/p', mainRoute);
+app.use('/p',mainRoute);
 app.use( panels);
+
+
 
 
 app.get('*', (req, res) => {
