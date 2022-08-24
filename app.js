@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const mainRoute = require('./routes/index-route')
 const panels = require('./routes/panels')
 
+//hello mintu sharma------------------
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
 app.use(express.urlencoded({ extended: true }));
@@ -13,7 +14,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-//iuh
 app.get('/', (req, res) => {
     res.status(200).render('index');
 });
