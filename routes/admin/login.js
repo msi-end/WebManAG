@@ -2,12 +2,11 @@ const express = require('express');
 const router = express.Router()
 const fs = require('fs')
 
-const logininfo = fs.readFileSync('login.json')
+const logininfo = fs.readFileSync('data/credentials.json')
 const loginfoparse = JSON.parse(logininfo)
-//console.log(loginfoparse);
 
 router.get('/login', (req, res) => {
-    res.render('./page/login')
+    res.render('./admin/login')
 })
 
 router.post('/login/loginfo', (req, res) => {
@@ -21,5 +20,5 @@ router.post('/login/loginfo', (req, res) => {
 
 
 
-module.exports = router
+module.exports = router;
 

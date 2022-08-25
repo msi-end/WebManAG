@@ -5,16 +5,13 @@ const port = process.env.PORT || 3000;
 const mainRoute = require('./routes/index-route')
 const panels = require('./routes/panels')
 const body = require('body-parser')
-const log = require('./routes/log')
+const log = require('./routes/admin/login')
 
 
-
-
-
-//hello mintu sharma------------------
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
 app.use(express.urlencoded({ extended: true }));
+app.use(body.json());
 
 // app.engine('html', require('ejs').renderFile)
 
@@ -23,9 +20,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
     res.status(200).render('index');
 });
-
-app.use(body.urlencoded({ extended: false }));
-app.use(body.json());
 
 
 
