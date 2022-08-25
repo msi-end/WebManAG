@@ -153,7 +153,7 @@
             <h3>Course Applied for: </h3>
             <div style="background-color: #fff; padding: 10px; width: 96%; border-radius: 15px;">
                 <h4>Stream:</h4>
-                <input type="radio" required class="m" name="stream" value="arta">
+                <input type="radio" onclick="streamSelect(this)" required class="m" name="stream" value="Arts">
                 <p class="p1">Arts</p>
                 <input type="radio" required class="m" name="stream" value="Science">
                 <p class="p1">Science</p>
@@ -306,150 +306,79 @@
 
                 <br><br>
             </div>
-    </div>
-    <br><br>
-    <!-- ========== uploa document  -->
-    <div style="background-color: #fff; padding: 15px; margin: auto;border-radius: 13px;">
-        <h2><u>UPLOAD YOUR DOCUMENT :</u></h2>
-        <div style="width: 49%; display: inline-block;">
 
-            <h4>UPLOAD PHOTO</h4>
-            <input class="file-upload" type="file" name="photo1">
 
-            <br>
-            <h4> UPLOAD BIRTH CERTIFICATE:</h4>
-            <input class="file-upload" type="file" name="photo2">
-        </div>
-        <div style="width: 49%; display: inline-block;">
-            <h4> UPLOAD MARKSHEET</h4>
-            <input class="file-upload" type="file" name="photo3">
-
-            <h4> UPLOAD SCHOOL CERTIFICATE:</h4>
-            <input class="file-upload" type="file" name="photo4">
-        </div>
-        <br><br>
-        <hr>
-
-        <!-- =================================rezor pay============== -->
-        <div style="background-color: rgb(238, 238, 238);padding: 10px; border-radius: 13px;">
-            <h3 style="color: rgb(255, 81, 0);">Terms & Condition</h3>
-            <p>
-                Read carefully before filling out the admission form<br> 1.Fill in the details of the form correctly.
-                <br> 2.One must submit proper photos in the required field. <br> 3.Your photo and xerox copies documents
-                are to be submitted offline
-                along with the bill.(Before attending college) <br> 4.You can download your prospectus and bill <br>
-                after you make the payment online. <br> 5.If the payment cancels, try again after sometime or submit a
-                query at our website. <br> 6.Details
-                regarding payment of admission fees are sent on your email provided. <br> 7.Any other problem persists
-                visit FRESIFY or whatsapp us on +91 8822722516<br> 8.The form will not be accepted until the payment is
-                made.The form can be re-submitted
-                if the payment cancels.
-            </p>
-        </div>
-        <hr style="font-style: italic;">
-        <!-- ================================rezpay================== -->
-        <br>
-        <div id="sub" class="subs" style="margin:-8px; display: none; margin-left: 20px; ">
-            <br><br><br>
-            <h3 style="color: rgb(226, 66, 66);">
-                <p style="color: rgb(8, 95, 19); display: inline-block;">Notice : </p> The form will not be accepted
-                until the payment is made.The form
-                can be re-submitted if the payment cancels.
-            </h3>
             <br><br>
-            <input onclick="sendemail()" type="submit" name="submit">
+            <!-- ========== uploa document  -->
+            <div style="background-color: #fff; padding: 15px; margin: auto;border-radius: 13px;">
+                <h2><u>UPLOAD YOUR DOCUMENT :</u></h2>
+                <div style="width: 49%; display: inline-block;">
 
-            <input type="reset" name="reset">
-            <br><br><br><br>
+                    <h4>UPLOAD PHOTO</h4>
+                    <input class="file-upload" type="file" name="photo1">
 
-        </div>
+                    <br>
+                    <h4> UPLOAD BIRTH CERTIFICATE:</h4>
+                    <input class="file-upload" type="file" name="photo2">
+                </div>
+                <div style="width: 49%; display: inline-block;">
+                    <h4> UPLOAD MARKSHEET</h4>
+                    <input class="file-upload" type="file" name="photo3">
 
+                    <h4> UPLOAD SCHOOL CERTIFICATE:</h4>
+                    <input class="file-upload" type="file" name="photo4">
+                </div>
+                <br><br>
+                <hr>
+
+                <!-- =================================rezor pay============== -->
+                <div style="background-color: rgb(238, 238, 238);padding: 10px; border-radius: 13px;">
+                    <h3 style="color: rgb(255, 81, 0);">Terms & Condition</h3>
+                    <p>
+                        Read carefully before filling out the admission form<br> 1.Fill in the details of the form
+                        correctly.
+                        <br> 2.One must submit proper photos in the required field. <br> 3.Your photo and xerox copies
+                        documents
+                        are to be submitted offline
+                        along with the bill.(Before attending college) <br> 4.You can download your prospectus and bill
+                        <br>
+                        after you make the payment online. <br> 5.If the payment cancels, try again after sometime or
+                        submit a
+                        query at our website. <br> 6.Details
+                        regarding payment of admission fees are sent on your email provided. <br> 7.Any other problem
+                        persists
+                        visit FRESIFY or whatsapp us on +91 8822722516<br> 8.The form will not be accepted until the
+                        payment is
+                        made.The form can be re-submitted
+                        if the payment cancels.
+                    <h3 style="color: rgb(226, 66, 66);">
+                        <p style="color: rgb(8, 95, 19); display: inline-block;">Notice : </p> The form will not be
+                        accepted
+                        until the payment is made.The form
+                        can be re-submitted if the payment cancels.
+                    </h3>
+                    </p>
+                </div>
+
+                <!-- ================================rezpay================== -->
+                <br>
+                <br>
+                <div id="sub" class="subs" style="margin:auto; width: 90%; ">
+                    <input type="reset" name="reset">
+                    <br><br>
+                    <button type="submit" id="payment-button" value="" name="submit"><img src="/static/assets/logos/secure.svg">  Pay & Submit Form </button>
+                    <br><br><br><br><br>
+                </div>
+            </div>
+
+        </Form>
     </div>
-    </Form>
-
-    </div>
-    <br> <br>
-
-
-    <div id="pay" onclick="runtwo()" style="display: block; margin: auto; width:173px; height: 39px;">
-        <form>
-            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_H9wYG7VRkcgwOw"
-                async="" style="font-size: 0px;">
-                    var gt = document.getElementsByClassName("Screen-closeBtn").style = "font-size:0px!important;"
-                </script>
-            <br>
-        </form>
-        <!-- ================= -->
-        <!-- -=================== -->
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <script>
-            function runtwo() {
-                on1();
-                on2();
-            }
-
-            function on1() {
-
-                var to = document.getElementById("pay");
-                to.style.display = "none";
-
-            }
-
-            function on2() {
-                var get = document.getElementById("sub");
-                get.style.display = "block";
-            }
-        </script>
-
-
-        <script>
-            window.onload = function () {
-                let link = document.createElement("link");
-                link.href = "xampp/style.css";
-                link.rel = "stylesheet";
-                link.type = "text/css";
-                frames[0].document.head.appendChild(link);
-            }
-        </script>
-    </div>
-    <script>
-        function doit() {
-            sendemail();
-            change();
-        }
-        function sendemail() {
-            var name = $('#name').val();
-            var email = $('#email').val();
-            var Body = 'Hello Dear,  ' + '\xa0\xa0' + name + '<br> <br>' + 'Your form has been submited successfully for Kalong Kapili Vidyapith . ' + email + '"' + '<br> <b>' + '\xa0\xa0' + 'To Admission Succesfully contact your college ASAP.' + '\xa0\xa0';
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "mr.roboxe@gmail.com",
-                Password: "m@sethrollins",
-                To: email,
-                From: "mr.roboxe@gmail.com",
-                Subject: '-' + name,
-                Body: Body
-            })
-        }
-
-        function change() {
-            var lsd = document.getElementById('mainbiz');
-            var lss = document.getElementById('succ');
-            lsd.style.display = "none";
-            lss.style.display = "block";
-        }
-    </script>
-
+    
     <footer>
         <br><br>
         <%- include('../partials/footer.ejs') %>
     </footer>
+<script src="/static/js/script.js"></script>
 </body>
 
 </html>

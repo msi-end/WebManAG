@@ -70,3 +70,22 @@ function modelWindow(params) {
         }
     }
 }
+function streamSelect(par) {
+    let Arts = ['arts ', 'science']
+    let Science = ['arts ', 'science']
+    let Commerce = ['arts ', 'science']
+   let SelectList = document.getElementsByTagName('select')
+    if (par.value === 'Arts') {
+        for(var i =0 ; i<= SelectList.length; i++){
+            for(var i =0 ; i<= Arts.length; i++){
+                let SelectElements=`<option value="${Arts[i]}">${Arts[i]}</option>`
+            }
+            SelectList[i].innerHTML
+        }
+    } else if (par.value === 'Science') {
+
+    } else {
+
+    }
+
+}
