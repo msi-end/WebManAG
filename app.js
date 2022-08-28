@@ -2,10 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
-const mainRoute = require('./routes/index-route')
-const panels = require('./routes/panels')
-const body = require('body-parser')
-const log = require('./routes/admin/login')
+const mainRoute = require('./routes/index-route');
+const panels = require('./routes/panels');
+const body = require('body-parser');
+const log = require('./routes/admin/login');
 
 
 
@@ -20,9 +20,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
     res.status(200).render('index');
 });
-
-
-
 app.use('/p',mainRoute);
 app.use( panels);
 app.use(log);
