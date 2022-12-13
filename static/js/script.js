@@ -17,17 +17,15 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 5 seconds
 }
 
-function myFunction() {
-    var x = document.getElementById("divformedmob");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.transform = " all .5s";
-        x.style.display = "block";
+function manuFunction() {
+    var manu = document.getElementById("manu");
+    manu.classList.add('animate__bounceInDown');
+    manu.classList.toggle("manuOpenToggle");
+    
 
 
-    }
 }
+
 
 // function modelWindow() {
 //     var modal = document.getElementById("  ");

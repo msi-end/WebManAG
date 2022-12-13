@@ -249,8 +249,8 @@ button:hover {
         margin-left: 15px;
     }
     #stream-icon div {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         margin: 20px;
     }
     #notice {
@@ -264,22 +264,13 @@ button:hover {
     .media-mobile {
         display: inline-block;
         width: 96%;
-        height: 25px;
+        height: 28px;
         color: white;
         text-align: center;
-        background-color: rgb(218, 66, 45);
+        background-color: rgb(243, 109, 91);
         padding: 8px;
-        box-shadow: .5px .5px 10px white;
-        /* position: relative; */
-        /* transition: all .5s ease; */
+       
     }
-    /* #divformedmob hr {
-        border: 1px solid rgb(0, 0, 0);
-        background-color: rgb(139, 37, 37);
-        width: 70%;
-        margin: auto;
-        padding: 0%;
-    } */
     .media-mobile:hover {
         background-color: rgb(241, 103, 48);
     }

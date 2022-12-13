@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.status(200).render('index');
 });
 app.use('/p',mainRoute);
-app.use( panels);
+app.use(panels);
 app.use(log);
 
 

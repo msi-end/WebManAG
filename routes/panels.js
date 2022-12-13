@@ -8,7 +8,6 @@ router.get('/registration-form', (req, res) => {
 })
 router.get('/our-staff', (req, res) => {res.status(200).render('./our-staf/index')})
 router.get('/gallery', (req, res) => {
-   
     res.status(200).render('./gallery/index')
 })
 
